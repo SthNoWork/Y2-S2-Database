@@ -1,0 +1,6 @@
+- Student Enrollment
+Students can enroll in multiple courses, and each course can also contain many students.
+Assume you already have the relations Student(StudentID, Name) and Course(CourseID,
+CourseName).
+Your task is to design the additional relation needed to represent enrollment and show how
+it links students and courses.

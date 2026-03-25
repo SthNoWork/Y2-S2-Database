@@ -1,0 +1,5 @@
+- Students and Courses
+A university stores information about students and courses. Each student has a student ID,
+name, city, and age. Each course has a course ID, course name, and credit value.
+Your task is to design the relations for these two entities and list the attributes of each
+relation.

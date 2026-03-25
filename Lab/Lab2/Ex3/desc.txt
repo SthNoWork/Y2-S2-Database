@@ -1,0 +1,7 @@
+- Departments and Teachers
+A university manages departments and teachers. Each department has a department ID,
+department name, and office. Each teacher has a teacher ID, teacher name, degree, and
+department ID. Each teacher works in one department, and one department can have many
+teachers.
+Your task is to design the relations for this situation and identify the common attribute that
+connects the two relations.

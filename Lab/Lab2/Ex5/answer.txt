@@ -1,0 +1,36 @@
+1. Find students who live in Phnom Penh
+
+σ City = "Phnom Penh" (Student)
+
+=== CUT ===
+
+2. Show only the names of students
+
+π Name (Student)
+
+=== CUT ===
+
+3. Show each student with the course IDs they take
+
+π Name, CourseID (Student ⨝ Student.StudentID = Enrollment.StudentID Enrollment)
+
+=== CUT ===
+
+4. Show each student name with the course names they take
+
+π Name, CourseName (
+    (Student ⨝ Student.StudentID = Enrollment.StudentID Enrollment)
+    ⨝ Enrollment.CourseID = Course.CourseID Course
+)
+
+=== CUT ===
+
+5. Find students who take Physics
+
+π Name (
+    Student ⨝ Student.StudentID = Enrollment.StudentID (
+        Enrollment ⨝ Enrollment.CourseID = Course.CourseID (
+            σ CourseName = "Physics" (Course)
+        )
+    )
+)

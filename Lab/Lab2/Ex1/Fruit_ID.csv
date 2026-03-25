@@ -1,4 +1,4 @@
-Fruit-ID,Fruits
-1,Apple
-2,Banana
-3,Orange
+fruit_id, Fruits
+1, Apple
+2, Banana
+3, Orange
