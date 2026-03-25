@@ -1,0 +1,7 @@
+- Fruit Relation
+In TP01, you organized information about fruits in a grocery shop. The shop has apples,
+bananas, and oranges. There are ten apples, and three of them are rotten while the rest are
+fresh. There are five bananas, and all of them are fresh. There are eight oranges, of which
+two are rotten and the rest are fresh.
+Your task is to convert this grouped information into a relation that stores the data clearly
+with no unnecessary repetition.

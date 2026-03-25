@@ -1,0 +1,6 @@
+Fruit_ID ,Condition_ID ,Amount
+1 (Apple),1 (Fresh),7
+1 (Apple),2 (Rotten),3
+2 (Banana),1 (Fresh),5
+3 (Orange),1 (Fresh),6
+3 (Orange),2 (Rotten),2
