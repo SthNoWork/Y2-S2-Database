@@ -1,0 +1,29 @@
+• Students who take Math or Physics
+
+π Name (
+    Student ▷◁ Enrollment ▷◁ (
+        σ CourseName = "Math" ∪ CourseName = "Physics" (Course)
+    )
+)
+
+=== CUT ===
+
+• Students who take both Math and Physics
+
+π Name (
+    Student ▷◁ Enrollment ▷◁ (
+        σ CourseName = "Math" ∩ CourseName = "Physics" (Course)
+    )
+)
+
+=== CUT ===
+
+• Students who take Math but not Physics
+
+π Name (
+    Student ▷◁ (
+        π StudentID (σ CourseName = "Math" (Course) ▷◁ Enrollment)
+        −
+        π StudentID (σ CourseName = "Physics" (Course) ▷◁ Enrollment)
+    )
+)

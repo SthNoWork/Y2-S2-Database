@@ -1,0 +1,5 @@
+- Selection
+Write relational algebra expressions for the following questions:
+•Find students who live in Phnom Penh
+•Find students who live in Siem Reap
+•Find the course whose name is Physics

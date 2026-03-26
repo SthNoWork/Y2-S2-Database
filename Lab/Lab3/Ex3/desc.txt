@@ -1,0 +1,4 @@
+- Cross Product and Selection
+Use cross product and selection to answer the following:
+•Show each student with the course IDs they take
+•Show each student with the course names they take

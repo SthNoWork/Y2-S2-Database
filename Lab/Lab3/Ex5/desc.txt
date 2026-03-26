@@ -1,0 +1,8 @@
+- Union, Intersection, Difference
+Suppose the following relations have the same schema:
+MathStudents(StudentID)
+PhysicsStudents(StudentID)
+Write relational algebra expressions for the following questions:
+•Students who take Math or Physics
+•Students who take both Math and Physics
+•Students who take Math but not Physics

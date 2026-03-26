@@ -1,0 +1,25 @@
+• Show each student name with course names they take
+
+π Name, CourseName (
+    Student ▷◁ Enrollment ▷◁ Course
+)
+
+=== CUT ===
+
+•Find students who take Physics
+
+π Name (
+    σ CourseName = "Physics" (
+        Student ▷◁ Enrollment ▷◁ Course
+    )
+)
+
+=== CUT ===
+
+•Find  students who take Math
+
+π Name (
+    σ CourseName = "Math" (
+        Student ▷◁ Enrollment ▷◁ Course
+    )
+)

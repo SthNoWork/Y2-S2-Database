@@ -1,0 +1,4 @@
+- Division Idea
+Use the idea of division to answer the following question:
+•Which students study all courses?
+Write the expression using Enrollment and Course.

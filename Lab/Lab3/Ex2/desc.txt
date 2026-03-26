@@ -1,0 +1,5 @@
+- Projection
+Write relational algebra expressions for the following questions:\
+•Show only student names
+•Show only city values from Student
+•Show only course names

@@ -1,0 +1,5 @@
+- More Than One Operation
+Write relational algebra expressions for the following questions:
+•Show the names of students who live in Phnom Penh and take Physics
+•Show the names of students who take English
+•Show the names of students who do not take English

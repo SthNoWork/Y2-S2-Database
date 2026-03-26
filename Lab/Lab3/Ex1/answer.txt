@@ -1,0 +1,15 @@
+• Find students who live in Phnom Penh
+
+σ City = "Phnom Penh"(Student)
+
+=== CUT ===
+
+• Find students who live in Siem Reap
+
+σ City = "Siem Reap"(Student)
+
+=== CUT ===
+
+• Find the course whose name is Physics
+
+σ CourseName = "Physics"(Course)

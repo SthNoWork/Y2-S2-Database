@@ -1,0 +1,5 @@
+- Join
+Write relational algebra expressions using join for the following questions:
+•Show each student name with the course names they take
+•Find students who take Physics
+•Find students who take Math

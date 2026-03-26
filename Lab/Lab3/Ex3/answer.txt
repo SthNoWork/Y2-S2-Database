@@ -1,0 +1,13 @@
+•Show each student with the course IDs they take
+
+π Name, CourseID (
+    Student ▷◁ Enrollment
+)
+
+=== CUT ===
+
+•Show each student with the course names they take
+
+π Name, CourseName (
+    Student ▷◁ Enrollment ▷◁ Course
+)

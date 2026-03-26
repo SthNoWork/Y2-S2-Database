@@ -1,0 +1,6 @@
+•selection (σ)
+•projection (π)
+•cross product (×)
+•union (∪), intersection (∩), and difference (−)
+•join (▷◁)
+•simple division idea (÷)

@@ -1,0 +1,15 @@
+• Show only student names
+
+π Name (Student)
+
+=== CUT ===
+
+• Show only city values from Student
+
+π city (Student)
+
+=== CUT ===
+
+• Show only course names
+
+π CourseName (Course)
