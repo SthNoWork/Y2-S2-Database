@@ -1,0 +1,10 @@
+– Hierarchical Model
+A school wants to have a database to manage information of student, teacher and course.
+Student is identified by ID. The database needs to store name, date of birth and gender
+of student. Teacher is identified by a unique number. Other information of teacher is
+name, skill, gender and degree. Course is identified by unique code. Course has title and
+description. Student takes courses. A course can have many students. A teacher can
+teach one or many courses. A course is given by only one teacher. Each student has a
+score for each course.
+
+Design using hierarchical model for the above system.

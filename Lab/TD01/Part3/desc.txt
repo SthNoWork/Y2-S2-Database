@@ -1,0 +1,23 @@
+– Relational Model
+The description of a system is represented as following:
+•An author is identified by a reference (ID).
+    We can search for some information related to each author such as his name and his address.
+•A book is identified by an ISBN. We store also the title, and the price of each book.
+•An editor is identified by an editor’s number.
+    For each editor, it is defined by his name and his address.
+•A store is identified by a store’s number. For each store, we can know its name,
+    its address, its contact such as the telephones’ numbers, email address or web site.
+    We know also the number of unit for each book in the stock.
+•A collection is identified by a name of collection and a short description.
+•An author in our system writes at least one book and can write also many of them.
+•A book is written by one or more authors.
+•A book is published by only one editor.
+•Each editor publishes many books.
+•All the books are sold in several stores.
+•All the stores sell many different books.
+•An editor can classify the books as collections.
+•A book belongs to only one collection.
+•A collection is named by only one editor.
+•A collection always contains many books.
+
+Design using relational model for the above system.

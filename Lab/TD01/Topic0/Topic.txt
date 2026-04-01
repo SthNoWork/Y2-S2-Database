@@ -1,0 +1,19 @@
+Topic:
+Database models and relational algebra: hierarchical, network, relational model design,
+and querying with algebra operators.
+
+Group Setup
+•Group size: 2 or 3 students
+•Time: 90 minutes
+•Submit: 1 PDF per group
+•File name: TD01_GroupXX.pdf
+
+Resources to Use
+•Lecture/Lesson 2 - Relational Algebra.pdf
+•Lecture/Lesson 3 - Database Model.pdf
+
+Learning Goals
+•Apply the hierarchical model to represent tree-structured data.
+•Apply the network model to represent many-to-many relationships.
+•Design a relational schema from textual requirements.
+•Write relational algebra expressions to query a given schema.

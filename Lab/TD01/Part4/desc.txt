@@ -1,0 +1,12 @@
+– Relational Algebra
+Use the relational schema your group designed in Part C.
+
+Write a relational algebra expression for each query:
+1. Show the titles of all books.
+2. Show the names of all authors whose address is ’Phnom Penh’.
+3. Show the titles of books that cost more than $20.
+4. Show the names of authors who wrote the book with ISBN ’978-0-13’.
+5. Show all pairs of (author name, book title) for actual authorship.
+6. Show the titles of books published by editor E01.
+7. Show the names of stores that sell the book ’978-0-13’.
+8. Show the titles of books that are not sold in any store.
