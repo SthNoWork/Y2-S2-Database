@@ -1,0 +1,3 @@
+• Which students study all courses?
+
+π StudentID, CourseID (Enrollment) ÷ π CourseID (Course)
