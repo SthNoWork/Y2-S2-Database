@@ -1,0 +1,27 @@
+• A company stores departments and employees where each employee belongs to only one department.
+answer: Hierarchical model
+why: Since the company have access to both. and then departments to employees. We have one central acess
+
+=== CUT ===
+
+• A social platform stores users and friendships, where one user can be connected to many other users.
+answer: Network model
+why: A single user can link to mutiple other users. a single user isn't limited and have free range to connect.
+
+=== CUT ===
+
+• A school stores students in tables with rows and columns.
+answer: Relational model
+why: students can have their own set attributes table and it is need in many other tables such as linked to what class taught by who and what major...
+
+=== CUT ===
+
+• A file system on your computer organizes folders and files in a parent-child structure.
+answer: Hierarchical model
+why: can only acess the contents of the folder you are in. Cannot jump to another without back-tracking first.
+
+=== CUT ===
+
+• A university tracks which students take which courses, where students can take many courses and each course has many students.
+answer: Network model
+why: Many connections between tables.

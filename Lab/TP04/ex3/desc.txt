@@ -1,0 +1,10 @@
+Exercise 3 - Identifying Relationships and Cardinality
+
+For each situation below, identify the relationship between entities and determine the cardinality
+    (one-to-one, one-to-many, or many-to-many).
+• A department employs many teachers. Each teacher works in one department.
+• A student can enroll in multiple courses. Each course can have multiple students.
+• A country has one president. Each president leads one country.
+• A customer can place multiple orders. Each order is placed by one customer.
+
+Hint: Read the relationship in both directions to determine cardinality.

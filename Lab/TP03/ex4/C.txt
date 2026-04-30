@@ -1,0 +1,5 @@
+Part C:
+Write three relation schemas that could represent this scenario in a relational
+database. Think carefully about what information each relation should store.
+
+Hint: One relation per entity (Doctor, Patient, Treatment).

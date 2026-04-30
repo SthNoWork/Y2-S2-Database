@@ -1,0 +1,11 @@
+Part A:
+Draw a hierarchical tree structure showing the relationships from university down to courses.
+
+answer:
+
+University (Root)
+•Faculty
+    •Department
+        •Professor
+            •Course
+

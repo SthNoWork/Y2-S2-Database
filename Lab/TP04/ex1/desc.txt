@@ -1,0 +1,10 @@
+Exercise 1 - Finding Entities
+
+A small library wants to manage its operations.
+The library needs to track books in its collection,
+information about library members,
+and record which books are borrowed by which members.
+The librarian also wants to track borrowing dates and return dates.
+Your task is to identify the main entities in this scenario.
+
+Hint: Entities are real-world objects worth storing data about.

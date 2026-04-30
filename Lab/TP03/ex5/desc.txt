@@ -1,0 +1,18 @@
+Part A:
+Identify all attributes that contain NULL values in this relation.
+
+Part B:
+For each NULL value identified, explain what it means in the business context.
+Are all NULL values representing the same type of missing information?
+
+Part C:
+Write the relation schema for this table.
+
+Part D:
+The company now wants to store customer information separately.
+
+Design a second relation Customer that would work with the Order relation above.
+List at least 4 attributes you think would be useful.
+Indicate which attribute would link the two relations.
+
+Hint: NULL = missing or not-yet-applicable data. Link relations via CustomerID.

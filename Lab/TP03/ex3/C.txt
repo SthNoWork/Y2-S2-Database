@@ -1,0 +1,7 @@
+Part C: The Limitation
+A pure hierarchical model is strictly limited by the "One Parent Rule,"
+meaning a child record (the Professor) can only be linked to a single parent record (the Department).
+
+If a professor works in multiple departments, the hierarchical model fails because it cannot support multiple parents for one child.
+To fix this, you would have to duplicate the professor's data in every department they work for,
+which leads to data redundancy and potential errors if their information changes.

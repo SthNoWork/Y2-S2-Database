@@ -1,0 +1,17 @@
+Part A:
+Explain why a hierarchical model is NOT suitable for this scenario.
+
+answer:
+
+Hospital data is a bit of a spiderweb, which makes it the perfect candidate for this analysis.
+A hierarchical model is like a rigid "Tree" where every child can only have one parent.
+
+In a hospital:
+A patient is often treated by many doctors (surgeons, nurses...)
+
+A doctor treats many patients.
+
+If you used a hierarchical model, you would have to choose:
+Is the doctor the parent or the patient?
+If the doctor is the parent, you'd have to duplicate a patient's entire file under every doctor they see.
+It’s a mess of redundant data that would eventually lead to errors.

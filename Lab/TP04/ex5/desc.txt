@@ -1,0 +1,16 @@
+Exercise 5 - ER Diagram with Multiple Entities
+
+A company manages employees and projects. Employees work on projects,
+and the company needs to track which employees are assigned to which projects.
+Each employee can work on multiple projects simultaneously,
+and each project requires multiple employees.
+
+The company needs to store:
+• employee information (ID, name, position, salary, department)
+• project information (ID, name, budget, start date).
+
+Your task is to:
+• Identify all entities and their attributes
+• Identify the relationship between entities
+• Determine the cardinality
+• Draw a complete ER diagram

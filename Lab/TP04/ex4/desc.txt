@@ -1,0 +1,17 @@
+Exercise 4 - Simple ER Diagram
+
+A gym wants to manage its members and personal trainers.
+Each member joins the gym and is assigned to one personal trainer for fitness guidance.
+Each trainer is responsible for multiple members.
+
+The gym needs to track information about:
+• members(ID, name, join, date, phone)
+• trainers (ID, name, specialty, hourly rate).
+
+Your task is to:
+• Identify the entities and their attributes
+• Identify the relationship between entities
+• Determine the cardinality
+• Draw an ER diagram
+
+Hint: Use rectangles for entities, diamonds for relationships, lines for connections.

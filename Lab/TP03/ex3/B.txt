@@ -1,0 +1,2 @@
+Part B:
+Write two relation schemas that could store this information in a relational database.

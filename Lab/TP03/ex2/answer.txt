@@ -1,0 +1,27 @@
+• Write the relation schema for this table:
+Books(BookID, Title, Author, Year, Price)
+
+=== CUT ===
+
+• List all the attributes:
+BookID, Title, Author, Year, Price
+
+=== CUT ===
+
+• Give one example of a tuple:
+(B002, Web Programming, Lim Sophea, 2019, 30.00)
+
+=== CUT ===
+
+• What is the degree of this relation?
+5 (There are 5 columns/attributes).
+
+=== CUT ===
+
+• What is the cardinality of this relation?
+4 (There are 4 rows/records).
+
+=== CUT ===
+
+• Is there any data quality issue you can identify in this table? Explain briefly.
+Yes, Redundancy/Duplication. Records B001 and B004 contain the exact same book information (Title, Author, Year, and Price). Even though they have different IDs, storing the same physical book as two separate entries can lead to data inconsistency.

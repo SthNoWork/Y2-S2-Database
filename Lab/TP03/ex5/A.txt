@@ -1,0 +1,5 @@
+Part A:
+Identify all attributes that contain NULL values.
+
+answer:
+The attributes containing NULLs are ShipDate and TrackingNum.

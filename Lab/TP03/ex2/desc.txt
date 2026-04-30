@@ -1,0 +1,10 @@
+Answer the following questions:
+
+• Write the relation schema for this table
+• List all the attributes
+• Give one example of a tuple
+• What is the degree of this relation?
+• What is the cardinality of this relation?
+• Is there any data quality issue you can identify in this table? Explain briefly.
+
+Hint: Degree = number of columns; Cardinality = number of rows

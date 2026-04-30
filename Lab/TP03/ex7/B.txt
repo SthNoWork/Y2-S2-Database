@@ -1,0 +1,12 @@
+Part B:
+Explain how a network model would be more flexible than a hierarchical model for this ride-sharing application.
+Give one specific example from the scenario above.
+
+answer:
+
+The Network Model is more flexible because it allows many-to-many relationships through multiple parent-child links.
+
+Example:
+A Ride node can be linked to both a Driver node and a Passenger node at the same time.
+You can "navigate" to the ride from the passenger's history or from the driver's log,
+as they are all part of the same connected web.

@@ -1,0 +1,10 @@
+Exercise 2 - Determining Attributes
+
+A university needs a course registration system. The system must:
+• Track student information so the university can contact them and verify their enrollment
+• Store course information so students know what courses are available and how many credits they earn
+• Record instructor details so the university knows who teaches each course
+
+Your task is to list appropriate attributes for Student, Course, and Instructor entities.
+
+Hint: Each entity needs a unique identifier and properties that describe it

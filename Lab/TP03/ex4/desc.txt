@@ -1,0 +1,21 @@
+4. Exercise 4 - Network Model Analysis
+
+A hospital manages information about doctors, patients, and treatments. The rules are:
+• Each doctor can treat many patients
+• Each patient can be treated by many doctors
+• Each treatment can be given to many patients
+• Each patient can receive many treatments
+• Doctors can prescribe treatments
+
+Part A:
+Explain why a hierarchical model is NOT suitable for this scenario.
+
+Part B:
+Draw a network model diagram showing the entities as nodes and the relationships as links.
+Label each link with the relationship name.
+
+Part C:
+Write three relation schemas that could represent this scenario in a relational
+database. Think carefully about what information each relation should store.
+
+Hint: One relation per entity (Doctor, Patient, Treatment).

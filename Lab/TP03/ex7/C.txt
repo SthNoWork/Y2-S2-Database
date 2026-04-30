@@ -1,0 +1,3 @@
+Part C:
+Design a relational model with at least four relation schemas that would handle this scenario well.
+For each relation, include only the most essential attributes (4-6 per relation).

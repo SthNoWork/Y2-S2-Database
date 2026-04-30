@@ -1,0 +1,9 @@
+Part B:
+Draw a network model diagram showing the entities as nodes and the relationships as links.
+Label each link with the relationship name.
+
+answer:
+
+Doctor Node <- treat -> Paitent Node
+Doctor Node <- Prescribes -> Treatment Node
+Patient Node <- Prescribes -> Treatment Node

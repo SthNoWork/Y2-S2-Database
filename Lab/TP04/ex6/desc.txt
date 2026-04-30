@@ -1,0 +1,25 @@
+Exercise 6 - Complete ER Design Challenge
+
+An online bookstore wants to design a database system. The store has the following requirements:
+
+The store sells books.
+• Each book has unique ISBN, title, publisher, publication year, price, and stock quantity.
+
+Books are written by authors.
+• Each author has an ID, name, nationality, and birth date.
+• A book can have multiple authors, and an author can write multiple books.
+
+Customers register with the store.
+• Each customer has an ID, name, email, phone, and shipping address.
+
+Customers place orders.
+• Each order has an ID, order date, total amount, and status.
+• Each order contains one or more books. The store needs to track the quantity of each book in an order.
+
+Your task is to:
+• Part A: Identify all entities in this system
+• Part B: List attributes for each entity (include unique identifiers)
+• Part C: Identify all relationships and their cardinalities
+• Part D: Draw a complete ER diagram
+Hint: Think about what information the system needs to track. Consider relationships
+between all entities.

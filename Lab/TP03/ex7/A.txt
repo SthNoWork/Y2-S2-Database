@@ -1,0 +1,19 @@
+Part A:
+If you had to use a hierarchical model, what would be the root node?
+Draw a simplified tree structure and identify two limitations of using a hierarchical model for this
+scenario.
+
+answer:
+
+Company
+• Drivers
+• Rides
+• Vehicles
+
+2 Limitations:
+
+1. Many-to-Many Failure: A passenger can take many rides, and a ride involves both a driver and a passenger.
+    In a tree, a "Ride" can only have one parent, making it impossible to link to both the Driver and Passenger simultaneously without massive data duplication.
+
+2. hared Resources: The scenario states vehicles can be driven by different drivers.
+    A hierarchical model cannot handle one vehicle (child) belonging to multiple drivers (parents).

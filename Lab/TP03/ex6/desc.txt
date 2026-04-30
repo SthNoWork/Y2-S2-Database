@@ -1,0 +1,25 @@
+6. Exercise 6 - Multi-Relation Design Challenge
+
+A food delivery application needs to store the following information:
+
+• Restaurants: restaurant ID, name, address, phone, cuisine type, rating
+• Menu items: item ID, name, description, price, category, which restaurant offers it
+• Customers: customer ID, name, phone, email, default delivery address
+• Orders: order ID, which customer placed it, which restaurant, order date/time, delivery address, total amount, status
+• Order details: which items are in each order, quantity of each item
+
+Part A:
+Design five relation schemas to store all this information. For each relation:
+
+• Write the relation schema with all attributes
+• Identify which attribute(s) could uniquely identify each tuple
+• Identify any attributes that reference another relation
+
+Part B:
+Draw a simple diagram showing how your five relations are connected to each other.
+
+Part C:
+Why did you separate Orders and Order details into two relations instead of putting everything in one table?
+Explain in 2-3 sentences.
+
+Hint: Think about data redundancy when an order has multiple items.

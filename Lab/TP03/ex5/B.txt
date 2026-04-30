@@ -1,0 +1,10 @@
+Part B:
+For each NULL value identified, explain what it means in the business context.
+Are all NULL values representing the same type of missing information?
+
+answer:
+
+NULL does not mean the data is "missing" because of an error. Instead:
+
+ShipDate is NULL: The order has not been dispatched yet (Status is "Processing" or "Pending").
+TrackingNum is NULL: A shipping label hasn't been generated yet because the item is still in the warehouse.

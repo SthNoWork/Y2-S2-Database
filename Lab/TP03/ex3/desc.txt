@@ -1,0 +1,25 @@
+3. Exercise 3 - Hierarchical Model Design
+
+A university has the following structure:
+
+• The university has multiple faculties (e.g., Faculty of Science, Faculty of Arts)
+• Each faculty has multiple departments
+• Each department has multiple professors
+• Each professor teaches multiple courses
+
+Part A:
+Draw a hierarchical tree structure showing the relationships from university down to courses.
+
+Part B:
+Write two relation schemas that could store this information in a relational database.
+
+For each relation, identify:
+
+• The relation name
+• All attributes
+• Which attribute could uniquely identify each tuple
+
+Part C:
+What limitation would a pure hierarchical model have if a professor can work in multiple departments? Explain in 2-3 sentences.
+
+Hint: Hierarchical model constraint: each child has only one parent.

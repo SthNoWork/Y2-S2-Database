@@ -1,0 +1,10 @@
+Part C:
+Why did you separate Orders and Order details into two relations instead of putting everything in one table?
+Explain in 2-3 sentences.
+
+answer:
+If you put everything in one table, you would have to repeat the OrderDate, CustomerName, and TotalAmount for every single item in the order.
+If a customer orders 10 different sushi rolls, you'd have 10 rows of redundant information.
+
+By separating them, you store the "receipt header" info once in Orders and list the "line items" in OrderDetails,
+which saves storage space and prevents mistakes when updating data.
