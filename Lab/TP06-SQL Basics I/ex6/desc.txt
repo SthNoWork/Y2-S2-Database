@@ -1,0 +1,7 @@
+Exercise 6 – Select Specific Columns
+
+Write SQL queries to:
+
+1. Show only customerName and city from customers
+2. Show only productName and buyPrice from products
+3. Show only firstName, lastName, and jobTitle from employees

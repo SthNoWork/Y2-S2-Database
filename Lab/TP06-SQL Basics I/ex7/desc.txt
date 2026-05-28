@@ -1,0 +1,9 @@
+Exercise 7 – Filter with WHERE
+
+Write SQL queries to:
+
+1. Show all customers located in ’France’
+2. Show all customers located in the ’USA’
+3. Show all products with a buyPrice less than 50
+4. Show all products with a quantityInStock greater than 5000
+5. Show all employees whose jobTitle is ’Sales Rep’

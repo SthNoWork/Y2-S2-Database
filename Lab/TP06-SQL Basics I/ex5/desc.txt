@@ -1,0 +1,7 @@
+Exercise 5 – Explore the Tables
+
+Write SQL statements to show all rows and all columns from:
+
+1. The customers table
+2. The products table
+3. The employees table

@@ -1,0 +1,9 @@
+Table A,Table B,Foreign Key / Connection
+customers,employees,salesRepEmployeeNumber in customers references employeeNumber in employees
+orders,customers,customerNumber in orders references customerNumber in customers
+orderdetails,orders,orderNumber in orderdetails references orderNumber in orders
+orderdetails,products,productCode in orderdetails references productCode in products
+payments,customers,customerNumber in payments references customerNumber in customers
+products,productlines,productLine in products references productLine in productlines
+employees,offices,officeCode in employees references officeCode in offices
+employees,employees,reportsTo in employees references employeeNumber in the same employees table

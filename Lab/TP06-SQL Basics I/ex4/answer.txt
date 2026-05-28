@@ -1,0 +1,24 @@
+Exercise 4 – Weak Entity Discussion
+
+1. Why can orderdetails be considered a weak entity?
+
+   Because it cannot exist on its own. An order detail line only makes sense
+   if there is an order and a product behind it. It has no independent
+   primary key — its identity is a combination of orderNumber and productCode,
+   both of which are foreign keys to other tables. Remove the parent order
+   or product and the detail has no meaning.
+
+2. What makes productlines a strong entity?
+
+   Because it exists completely on its own. A product line like "Classic Cars"
+   or "Motorcycles" is a standalone category that does not depend on any other
+   table to exist. It has its own primary key (productLine) and nothing in its
+   definition references another table.
+
+3. The employees table has a column reportsTo that references another row in
+   the same table. What kind of relationship is this called?
+   
+   This is called a self-referencing relationship (also called a recursive
+   relationship). It means one employee can be the manager of another employee,
+   and both the manager and the subordinate live in the same table. The
+   reportsTo column stores the employeeNumber of the manager.

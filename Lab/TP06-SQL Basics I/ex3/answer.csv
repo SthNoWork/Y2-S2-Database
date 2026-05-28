@@ -1,0 +1,9 @@
+Table A,Table B,Cardinality,Explanation
+customers,employees,1:N,One employee can be the sales rep for many customers
+employees,offices,N:1,Many employees work in one office
+employees,employees,1:N,One employee (manager) can have many employees reporting to them
+orders,customers,N:1,Many orders can belong to one customer
+orderdetails,orders,N:1,Many order detail lines belong to one order
+orderdetails,products,N:1,Many order detail lines can reference the same product
+payments,customers,N:1,Many payments can be made by one customer
+products,productlines,N:1,Many products belong to one product line
