@@ -1,0 +1,5 @@
+Exercise 2 – LEFT JOIN and Missing Data
+
+1. Show all customers and their orders. Include customers who have never placed an order (their order columns should appear as NULL).
+2. From the result above, modify the query to show only the customers who have never placed an order.
+3. Show all products that have never appeared in any order.

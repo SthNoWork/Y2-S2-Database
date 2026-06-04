@@ -1,0 +1,28 @@
+-- 1: customer and total order count (include zero orders)
+SELECT c.customerName, COUNT(o.orderNumber) AS orderCount
+FROM customers c
+LEFT JOIN orders o ON c.customerNumber = o.customerNumber
+GROUP BY c.customerNumber, c.customerName
+ORDER BY orderCount DESC;
+
+-- 2: product and total quantity ordered
+SELECT p.productName, SUM(od.quantityOrdered) AS totalQuantity
+FROM products p
+JOIN orderdetails od ON p.productCode = od.productCode
+GROUP BY p.productCode, p.productName
+ORDER BY totalQuantity DESC;
+
+-- 3: office city, number of employees, and number of customers those employees manage
+SELECT o.city,
+	   COUNT(DISTINCT e.employeeNumber) AS numEmployees,
+	   COUNT(DISTINCT c.customerNumber) AS numCustomers
+FROM offices o
+LEFT JOIN employees e ON o.officeCode = e.officeCode
+LEFT JOIN customers c ON e.employeeNumber = c.salesRepEmployeeNumber
+GROUP BY o.officeCode, o.city;
+
+-- 4: order total per order
+SELECT od.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS orderTotal
+FROM orderdetails od
+GROUP BY od.orderNumber
+ORDER BY orderTotal DESC;

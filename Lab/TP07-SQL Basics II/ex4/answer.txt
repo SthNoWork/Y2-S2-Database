@@ -1,0 +1,19 @@
+-- 1: distinct countries sorted A to Z
+SELECT DISTINCT country FROM customers ORDER BY country ASC;
+
+-- 2: top 5 most expensive products by MSRP
+SELECT productName, productLine, MSRP
+FROM products
+ORDER BY MSRP DESC
+LIMIT 5;
+
+-- 3: 3 orders with earliest orderDate
+SELECT orderNumber, orderDate
+FROM orders
+ORDER BY orderDate ASC
+LIMIT 3;
+
+-- 4: products ordered by productLine then buyPrice desc
+SELECT productCode, productName, productLine, buyPrice
+FROM products
+ORDER BY productLine ASC, buyPrice DESC;

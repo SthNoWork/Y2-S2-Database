@@ -1,0 +1,5 @@
+Exercise 8 – Subqueries and Logic
+
+1. Show all products whose buyPrice is above the average buyPrice of all products.
+2. Show all customers who are located in the same country as the customer named 'Signal Gift Stores'.
+3. Show all orders placed after the most recent order placed by customer number 103.

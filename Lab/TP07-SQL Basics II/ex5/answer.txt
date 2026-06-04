@@ -1,0 +1,19 @@
+-- 1: line total per orderdetail
+SELECT orderNumber, productCode, quantityOrdered, priceEach,
+			 (quantityOrdered * priceEach) AS lineTotal
+FROM orderdetails;
+
+-- 2: profit margin per product
+SELECT productName, (MSRP - buyPrice) AS margin
+FROM products
+ORDER BY margin DESC;
+
+-- 3: price category using CASE WHEN
+SELECT productName, buyPrice,
+			 CASE
+				 WHEN buyPrice < 30 THEN 'Budget'
+				 WHEN buyPrice BETWEEN 30 AND 80 THEN 'Mid-range'
+				 WHEN buyPrice > 80 THEN 'Premium'
+				 ELSE 'Unknown'
+			 END AS priceCategory
+FROM products;

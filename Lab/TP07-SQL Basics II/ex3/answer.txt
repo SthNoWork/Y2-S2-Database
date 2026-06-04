@@ -1,0 +1,21 @@
+-- 1: employee and manager full names
+SELECT CONCAT(e.firstName, ' ', e.lastName) AS employeeName,
+	   CONCAT(m.firstName, ' ', m.lastName) AS managerName
+FROM employees e
+LEFT JOIN employees m ON e.reportsTo = m.employeeNumber;
+
+-- 2: include employee's office city
+SELECT CONCAT(e.firstName, ' ', e.lastName) AS employeeName,
+	   CONCAT(m.firstName, ' ', m.lastName) AS managerName,
+	   o.city
+FROM employees e
+LEFT JOIN employees m ON e.reportsTo = m.employeeNumber
+LEFT JOIN offices o ON e.officeCode = o.officeCode;
+
+-- 3: employees whose manager's jobTitle is 'VP Sales'
+SELECT CONCAT(e.firstName, ' ', e.lastName) AS employeeName,
+	   CONCAT(m.firstName, ' ', m.lastName) AS managerName,
+	   m.jobTitle
+FROM employees e
+JOIN employees m ON e.reportsTo = m.employeeNumber
+WHERE m.jobTitle = 'VP Sales';

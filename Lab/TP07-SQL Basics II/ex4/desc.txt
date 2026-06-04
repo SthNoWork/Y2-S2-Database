@@ -1,0 +1,6 @@
+Exercise 4 – ORDER BY and DISTINCT
+
+1. List all distinct countries that appear in customers, sorted A to Z.
+2. List the top 5 most expensive products by MSRP, showing productName, productLine, and MSRP.
+3. Show the 3 orders with the earliest orderDate.
+4. List all products ordered first by productLine (A to Z), then by buyPrice (highest to lowest) within each line.

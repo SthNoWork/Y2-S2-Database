@@ -1,0 +1,6 @@
+Exercise 6 – GROUP BY with JOIN
+
+1. Show each customerName and the total number of orders they have placed. Include customers with zero orders (use LEFT JOIN). Sort by order count descending.
+2. Show each productName and the total quantity ordered across all orders. Sort by total quantity descending.
+3. Show each officeCode (city), the number of employees in that office, and the number of customers those employees manage in total.
+4. For each order, calculate the total order value (SUM(quantityOrdered * priceEach)). Show orderNumber and orderTotal, sorted by orderTotal descending.

@@ -1,0 +1,20 @@
+-- 1
+SELECT CONCAT(e.firstName, ' ', e.lastName) AS fullName,
+	   e.jobTitle,
+	   o.city
+FROM employees e
+INNER JOIN offices o ON e.officeCode = o.officeCode;
+
+-- 2
+SELECT o.orderNumber, o.orderDate, c.customerName, c.country
+FROM orders o
+INNER JOIN customers c ON o.customerNumber = c.customerNumber
+WHERE o.status = 'Shipped';
+
+-- 3
+SELECT c.customerName, o.orderNumber, p.productName, od.quantityOrdered, od.priceEach
+FROM customers c
+JOIN orders o ON c.customerNumber = o.customerNumber
+JOIN orderdetails od ON o.orderNumber = od.orderNumber
+JOIN products p ON od.productCode = p.productCode
+WHERE c.country = 'France';
