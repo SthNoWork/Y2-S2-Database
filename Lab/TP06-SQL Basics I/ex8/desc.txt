@@ -1,0 +1,6 @@
+Exercise 8 – Combined Conditions
+
+Write SQL queries to:
+
+1. Show customers in ’USA’ with a creditLimit greater than 100000
+2. Show products in the ’Classic Cars’ product line with buyPrice greater than 80

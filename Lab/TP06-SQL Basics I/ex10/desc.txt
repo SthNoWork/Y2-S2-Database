@@ -1,0 +1,6 @@
+Exercise 10 – Update a Row
+
+Write SQL statements to:
+
+1. Change the city of customer number 999 to ’Siem Reap’
+2. Change the creditLimit of customer number 999 to 75000

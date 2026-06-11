@@ -1,0 +1,6 @@
+Exercise 9 – Business Logic Queries
+
+1. Sales rep performance: For each sales representative (employee), show their full name and the total number of customers they manage. Show only reps who manage at least 3 customers.
+2. Order value ranking: Show each order’s orderNumber, customerName, and total order value. Display only orders with a total value greater than 5000. Sort by value descending.
+3. Inventory alert: Show all products where quantityInStock is less than the total quantity already ordered for that product across all orders.
+4. Best product per line: For each productLine, show the productName with the highest MSRP.

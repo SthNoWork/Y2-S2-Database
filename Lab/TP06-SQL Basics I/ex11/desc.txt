@@ -1,0 +1,4 @@
+Exercise 11 – Delete a Row
+
+Write an SQL statement to delete the customer whose customerNumber is 999.
+After deleting, write a SELECT to confirm the row no longer exists.

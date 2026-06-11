@@ -1,0 +1,34 @@
+-- 1: sales rep performance (reps with at least 3 customers)
+SELECT CONCAT(e.firstName, ' ', e.lastName) AS repName,
+			 COUNT(c.customerNumber) AS customerCount
+FROM employees e
+JOIN customers c ON e.employeeNumber = c.salesRepEmployeeNumber
+GROUP BY e.employeeNumber, repName
+HAVING COUNT(c.customerNumber) >= 3;
+
+-- 2: order value ranking (orders > 5000)
+SELECT od.orderNumber, c.customerName, SUM(od.quantityOrdered * od.priceEach) AS orderTotal
+FROM orderdetails od
+JOIN orders o ON od.orderNumber = o.orderNumber
+JOIN customers c ON o.customerNumber = c.customerNumber
+GROUP BY od.orderNumber, c.customerName
+HAVING SUM(od.quantityOrdered * od.priceEach) > 5000
+ORDER BY orderTotal DESC;
+
+-- 3: inventory alert (quantityInStock < total ordered)
+SELECT p.productCode, p.productName, p.quantityInStock,
+			 COALESCE(t.totalOrdered, 0) AS totalOrdered
+FROM products p
+LEFT JOIN (
+	SELECT productCode, SUM(quantityOrdered) AS totalOrdered
+	FROM orderdetails
+	GROUP BY productCode
+) t ON p.productCode = t.productCode
+WHERE p.quantityInStock < COALESCE(t.totalOrdered, 0);
+
+-- 4: best product per productLine (highest MSRP)
+SELECT p.productLine, p.productName, p.MSRP
+FROM products p
+WHERE p.MSRP = (
+	SELECT MAX(p2.MSRP) FROM products p2 WHERE p2.productLine = p.productLine
+);

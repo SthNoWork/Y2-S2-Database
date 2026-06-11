@@ -1,0 +1,6 @@
+Exercise 7 – HAVING with Logic
+
+1. Show countries with more than 5 customers, along with the customer count. Sort by count descending.
+2. Show product lines whose average buyPrice is above 60 and that contain more than 10 products.
+3. Show customers whose total payment amount exceeds 100000. Display customerNumber, customerName, and total amount.
+4. Show the single order with the highest total value.

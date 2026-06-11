@@ -1,0 +1,26 @@
+-- 1: countries with more than 5 customers
+SELECT country, COUNT(*) AS customerCount
+FROM customers
+GROUP BY country
+HAVING COUNT(*) > 5
+ORDER BY customerCount DESC;
+
+-- 2: product lines with avg buyPrice > 60 and > 10 products
+SELECT productLine, AVG(buyPrice) AS avgBuyPrice, COUNT(*) AS productCount
+FROM products
+GROUP BY productLine
+HAVING AVG(buyPrice) > 60 AND COUNT(*) > 10;
+
+-- 3: customers whose total payments exceed 100000
+SELECT c.customerNumber, c.customerName, SUM(p.amount) AS totalPayments
+FROM customers c
+JOIN payments p ON c.customerNumber = p.customerNumber
+GROUP BY c.customerNumber, c.customerName
+HAVING SUM(p.amount) > 100000;
+
+-- 4: single order with highest total value
+SELECT od.orderNumber, SUM(od.quantityOrdered * od.priceEach) AS orderTotal
+FROM orderdetails od
+GROUP BY od.orderNumber
+ORDER BY orderTotal DESC
+LIMIT 1;

@@ -1,0 +1,9 @@
+Table,Type,Reason
+customers,Strong Entity,Exists independently — a customer is a real-world entity that does not depend on any other table
+employees,Strong Entity,Exists independently — an employee exists on their own regardless of any other table
+offices,Strong Entity,Exists independently — an office location exists on its own
+orders,Strong Entity,"Has its own primary key (orderNumber) and exists as a standalone concept, but depends on a customer to make sense — borderline, commonly treated as strong"
+orderdetails,Weak/Associative Table,"Cannot exist without both an order and a product — it has no meaning on its own, its primary key is a combination of orderNumber and productCode"
+payments,Weak Entity,"Cannot exist without a customer — a payment always belongs to a customer, no customer means no payment"
+productlines,Strong Entity,Exists independently — a product line category exists on its own without needing another table
+products,Strong Entity,"Exists independently — a product has its own identity (productCode), though it references a productline"

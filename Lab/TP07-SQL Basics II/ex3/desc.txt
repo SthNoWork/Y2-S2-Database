@@ -1,0 +1,5 @@
+Exercise 3 – Self JOIN
+
+1. Show each employee’s full name and their manager’s full name. Use aliases e (employee) and m (manager).
+2. Extend the query: also show the city of the office where the employee works. (employees self-join + offices)
+3. Show only employees whose manager’s jobTitle is 'VP Sales'.

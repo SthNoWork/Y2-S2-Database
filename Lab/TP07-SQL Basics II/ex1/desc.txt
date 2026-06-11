@@ -1,0 +1,5 @@
+Exercise 1 – INNER JOIN
+
+1. Show each employee’s full name (firstName, lastName), their jobTitle, and the city of their office. Use table aliases e and o.
+2. Show orderNumber, orderDate, customerName, and country for all Shipped orders.
+3. Show customerName, orderNumber, productName, quantityOrdered, and priceEach for every line item of every order placed by customers in 'France'.

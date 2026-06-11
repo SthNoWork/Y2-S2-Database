@@ -1,0 +1,9 @@
+Exercise 5 – Computed Columns and CASE WHEN
+
+1. For each row in orderdetails, calculate the line total as quantityOrdered * priceEach. Label the column lineTotal.
+2. For each row in products, calculate the profit margin as MSRP - buyPrice. Show productName and margin, sorted by margin descending.
+3. Use CASE WHEN to label each product by price:
+	- buyPrice < 30 → 'Budget'
+	- buyPrice between 30 and 80 → 'Mid-range'
+	- buyPrice > 80 → 'Premium'
+	Show productName, buyPrice, and the label column named priceCategory.

@@ -1,0 +1,16 @@
+-- 1: all customers and their orders (including customers with no orders)
+SELECT c.customerNumber, c.customerName, o.orderNumber, o.orderDate
+FROM customers c
+LEFT JOIN orders o ON c.customerNumber = o.customerNumber;
+
+-- 2: customers who have never placed an order
+SELECT c.customerNumber, c.customerName
+FROM customers c
+LEFT JOIN orders o ON c.customerNumber = o.customerNumber
+WHERE o.orderNumber IS NULL;
+
+-- 3: products that have never appeared in any order
+SELECT p.productCode, p.productName
+FROM products p
+LEFT JOIN orderdetails od ON p.productCode = od.productCode
+WHERE od.orderNumber IS NULL;
