@@ -1,0 +1,16 @@
+Exercise 7 - Final Practice
+
+Relation:
+  Sale(SaleID, CustomerName, CustomerPhone, ProductName, Price, Quantity)
+
+Data:
+  1001 | Dara   | 012-111-111 | Notebook | 2.50 | 3
+  1002 | Dara   | 012-111-111 | Pen      | 0.75 | 10
+  1003 | Sophea | 012-222-222 | Notebook | 2.50 | 1
+  1004 | Sophea | 012-222-222 | Eraser   | 0.50 | 5
+  1005 | Vanna  | 012-333-333 | Pen      | 0.75 | 2
+
+Tasks:
+  1. Identify repeated information in the table.
+  2. Explain one update problem (e.g., what if Dara changes her phone number?).
+  3. Write a better set of relations and show how the data looks in each new table.

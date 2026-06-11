@@ -1,0 +1,31 @@
+Exercise 6 - Answers
+
+1. Why this design violates 1NF:
+   The Courses column holds multiple values in a single cell
+   (e.g., "Math, Physics, English"). First Normal Form (1NF) requires that every
+   cell contains exactly one atomic (indivisible) value. Storing a comma-separated
+   list makes it hard to search for a specific course, count enrollments, or join
+   with other tables. It also makes queries like "find all students in Math"
+   unnecessarily complicated.
+
+2. Better table structure following 1NF:
+   Give each course its own row so every cell holds exactly one value.
+
+   StudentCourse(StudentID, Name, Course)
+
+3. New table with the same data:
+
+   StudentID | Name   | Course
+   ----------|--------|--------
+   S01       | Dara   | Math
+   S01       | Dara   | Physics
+   S01       | Dara   | English
+   S02       | Sophea | Math
+   S03       | Vanna  | Physics
+   S03       | Vanna  | English
+
+   Note: This still has some redundancy (Name repeats per row). A further
+   improvement is to separate into:
+     Student(StudentID, Name)
+     Enrollment(StudentID, Course)
+   as practiced in Exercise 4.

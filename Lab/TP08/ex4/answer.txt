@@ -1,0 +1,43 @@
+Exercise 4 - Answer
+
+Decomposed Relations:
+
+  Student(StudentID, StudentName, City)
+  Course(CourseID, CourseName)
+  Enrollment(StudentID, CourseID, Score)
+
+--- Student table ---
+StudentID | StudentName | City
+----------|-------------|------------
+S01       | Dara        | Phnom Penh
+S02       | Sophea      | Siem Reap
+S03       | Vanna       | Phnom Penh
+
+--- Course table ---
+CourseID | CourseName
+---------|----------
+C1       | Math
+C2       | Physics
+C3       | English
+
+--- Enrollment table ---
+StudentID | CourseID | Score
+----------|----------|------
+S01       | C1       | 85
+S01       | C2       | 78
+S01       | C3       | 90
+S02       | C1       | 70
+S02       | C2       | 88
+S03       | C3       | 65
+
+Verification:
+  JOIN Student + Enrollment ON StudentID,
+  then JOIN result + Course ON CourseID
+  reproduces the full original StudentCourse relation with no data loss.
+
+Benefits of this decomposition:
+  - Student name/city is stored exactly once per student (no redundant rows).
+  - Course name is stored exactly once per course.
+  - Updating Dara's city now requires changing exactly 1 row in Student.
+  - Adding a new student with no courses is now possible (insert into Student only).
+  - Deleting an enrollment row does not remove the student or course record.

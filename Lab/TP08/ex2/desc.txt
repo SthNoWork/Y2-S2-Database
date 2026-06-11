@@ -1,0 +1,12 @@
+Exercise 2 - Update Anomaly
+
+Use the same relation and data from Exercise 1.
+
+Suppose student S01 (Dara) moves from Phnom Penh to Battambang.
+
+  S01 | Dara | Battambang? | C1 | Math    | 85
+  S01 | Dara | Phnom Penh? | C2 | Physics | 78
+  S01 | Dara | Phnom Penh? | C3 | English | 90
+
+Question:
+  Explain what problem can happen if the city of student S01 changes.

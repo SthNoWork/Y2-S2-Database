@@ -1,0 +1,45 @@
+Exercise 5 - Answers
+
+1. Repeated values:
+   - Employee info (EID, Name, Gender, DeptID, DeptName) repeats once per skill.
+     E01 Dara appears in two rows (Java and Python).
+     E03 Vanna appears in two rows (SQL and Python).
+   - Department info (DeptID, DeptName) repeats once per employee in that department.
+     D1, Sales appears in three rows (E01 Java, E01 Python, E02 Java).
+
+2. Problem with repeated department information:
+   If the department name changes (e.g., "Sales" is renamed to "Sales & Marketing"),
+   every row containing D1 must be updated (3 rows in this example). If any row is
+   missed, the table becomes inconsistent — D1 maps to two different names.
+   This is an UPDATE ANOMALY caused by redundant department data.
+
+3. Better decomposition:
+
+   Employee(EID, Name, Gender, DeptID)
+   Department(DeptID, DeptName)
+   EmployeeSkill(EID, Skill)
+
+   --- Employee table ---
+   EID | Name   | Gender | DeptID
+   ----|--------|--------|-------
+   E01 | Dara   | M      | D1
+   E02 | Sophea | F      | D1
+   E03 | Vanna  | M      | D2
+
+   --- Department table ---
+   DeptID | DeptName
+   -------|----------
+   D1     | Sales
+   D2     | IT
+
+   --- EmployeeSkill table ---
+   EID | Skill
+   ----|-------
+   E01 | Java
+   E01 | Python
+   E02 | Java
+   E03 | SQL
+   E03 | Python
+
+   Now renaming a department requires updating exactly 1 row in Department.
+   Employee personal info is stored once per person, not once per skill.

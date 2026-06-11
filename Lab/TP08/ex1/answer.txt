@@ -1,0 +1,13 @@
+Exercise 1 - Answers
+
+1. Repeated information:
+   - Student information (StudentID, StudentName, City) repeats once per course the
+     student is enrolled in.
+   - Course information (CourseID, CourseName) repeats once per student enrolled in
+     that course.
+
+2. Example of repeated student information:
+   S01, Dara, Phnom Penh appears three times (once for Math, Physics, and English).
+
+3. Example of repeated course information:
+   C1, Math appears twice (once for S01 Dara and once for S02 Sophea).

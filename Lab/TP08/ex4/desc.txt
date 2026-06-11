@@ -1,0 +1,16 @@
+Exercise 4 - Decompose the Relation
+
+Original relation:
+  StudentCourse(StudentID, StudentName, City, CourseID, CourseName, Score)
+
+Task:
+  Split it into smaller relations that reduce repetition, following this hint:
+
+  Table       | Attributes
+  ------------|-----------------------------
+  Student     | StudentID, ...
+  Course      | CourseID, ...
+  Enrollment  | ...
+
+After decomposing, verify that the original data from Exercise 1 can be recovered
+by joining the smaller tables.

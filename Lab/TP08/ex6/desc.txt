@@ -1,0 +1,14 @@
+Exercise 6 - Simple 1NF Thinking
+
+Unorganized relation:
+  Student(StudentID, Name, Courses)
+
+Data:
+  S01 | Dara   | Math, Physics, English
+  S02 | Sophea | Math
+  S03 | Vanna  | Physics, English
+
+Tasks:
+  1. Explain why this is not a good table design (think about 1NF).
+  2. Write a better table structure that follows 1NF.
+  3. Show the new table with the same data filled in.

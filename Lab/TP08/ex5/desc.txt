@@ -1,0 +1,16 @@
+Exercise 5 - Another Example
+
+Relation:
+  Employee(EID, Name, Gender, DeptID, DeptName, Skill)
+
+Data:
+  E01 | Dara   | M | D1 | Sales | Java
+  E01 | Dara   | M | D1 | Sales | Python
+  E02 | Sophea | F | D1 | Sales | Java
+  E03 | Vanna  | M | D2 | IT    | SQL
+  E03 | Vanna  | M | D2 | IT    | Python
+
+Questions:
+  1. Which values may be repeated?
+  2. Why can repeated department information be a problem?
+  3. Write a better decomposition of this relation.

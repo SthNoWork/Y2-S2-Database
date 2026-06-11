@@ -1,0 +1,16 @@
+Exercise 3 - Insertion and Deletion Problems
+
+Use the same relation:
+  StudentCourse(StudentID, StudentName, City, CourseID, CourseName, Score)
+
+Situation A - Insertion:
+  A new student S04 (Chenda, Kampot) registers but has not enrolled in any course yet.
+  S04 | Chenda | Kampot | ??? | ??? | ???
+
+Situation B - Deletion:
+  Vanna (S03) is the only student taking English (C3).
+  Deleting that row removes: (S03, Vanna, Phnom Penh, C3, English, 65)
+
+Questions:
+  1. What problem happens when adding a student with no course enrollment?
+  2. What problem happens when deleting the only row for one course?

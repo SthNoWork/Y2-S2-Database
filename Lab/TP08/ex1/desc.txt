@@ -1,0 +1,17 @@
+Exercise 1 - Finding Redundancy
+
+Relation:
+  StudentCourse(StudentID, StudentName, City, CourseID, CourseName, Score)
+
+Data:
+  S01 | Dara   | Phnom Penh | C1 | Math    | 85
+  S01 | Dara   | Phnom Penh | C2 | Physics | 78
+  S01 | Dara   | Phnom Penh | C3 | English | 90
+  S02 | Sophea | Siem Reap  | C1 | Math    | 70
+  S02 | Sophea | Siem Reap  | C2 | Physics | 88
+  S03 | Vanna  | Phnom Penh | C3 | English | 65
+
+Questions:
+  1. Which information may be repeated in this relation?
+  2. Give one example of repeated student information.
+  3. Give one example of repeated course information.

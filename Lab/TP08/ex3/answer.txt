@@ -1,0 +1,17 @@
+Exercise 3 - Answers
+
+1. Insertion Anomaly:
+   Student S04 (Chenda, Kampot) cannot be inserted because CourseID and CourseName
+   are part of the relation and cannot be left NULL if they form part of the primary key.
+   We are forced to either leave required fields blank (invalid) or invent a fake course
+   just to store the student's information.
+   This is called an INSERTION ANOMALY: we cannot record one fact without also
+   providing an unrelated fact.
+
+2. Deletion Anomaly:
+   Deleting the row (S03, Vanna, Phnom Penh, C3, English, 65) removes the only
+   record of course C3 (English) from the entire database.
+   We lose Vanna's student record AND the English course information at the same time,
+   even though we only intended to remove an enrollment.
+   This is called a DELETION ANOMALY: removing one fact accidentally destroys a
+   different, unrelated fact.

@@ -1,0 +1,49 @@
+Exercise 7 - Answers
+
+1. Repeated information:
+   - Customer info (CustomerName, CustomerPhone) repeats once per sale.
+     Dara + 012-111-111 appears in rows 1001 and 1002.
+     Sophea + 012-222-222 appears in rows 1003 and 1004.
+   - Product info (ProductName, Price) repeats across rows.
+     Notebook, 2.50 appears in rows 1001 and 1003.
+     Pen, 0.75 appears in rows 1002 and 1005.
+
+2. Update problem:
+   If Dara changes her phone number from 012-111-111 to 012-999-999, rows 1001
+   and 1002 must both be updated. If only row 1001 is updated, the same customer
+   appears to have two different phone numbers — an inconsistent, corrupted state.
+   This is an UPDATE ANOMALY caused by storing customer data inside the sale rows.
+
+3. Better decomposition:
+
+   Customer(CustomerID, CustomerName, CustomerPhone)
+   Product(ProductID, ProductName, Price)
+   Sale(SaleID, CustomerID, ProductID, Quantity)
+
+   --- Customer table ---
+   CustomerID | CustomerName | CustomerPhone
+   -----------|--------------|---------------
+   C01        | Dara         | 012-111-111
+   C02        | Sophea       | 012-222-222
+   C03        | Vanna        | 012-333-333
+
+   --- Product table ---
+   ProductID | ProductName | Price
+   ----------|-------------|------
+   P01       | Notebook    | 2.50
+   P02       | Pen         | 0.75
+   P03       | Eraser      | 0.50
+
+   --- Sale table ---
+   SaleID | CustomerID | ProductID | Quantity
+   -------|------------|-----------|----------
+   1001   | C01        | P01       | 3
+   1002   | C01        | P02       | 10
+   1003   | C02        | P01       | 1
+   1004   | C02        | P03       | 5
+   1005   | C03        | P02       | 2
+
+   Benefits:
+   - Updating Dara's phone now requires changing exactly 1 row in Customer.
+   - Changing a product price requires changing exactly 1 row in Product.
+   - No customer or product information is lost if a sale row is deleted.

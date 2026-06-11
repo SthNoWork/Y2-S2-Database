@@ -1,0 +1,12 @@
+Exercise 2 - Answer
+
+Update Anomaly:
+  Because Dara's city is stored in multiple rows (one per course enrolled), updating
+  the city requires changing every row that belongs to S01.
+
+  If only one row is updated (e.g., C1 row is changed to Battambang but C2 and C3
+  rows are not updated), the table becomes inconsistent — the same student appears
+  to live in two different cities at the same time.
+
+  This is called an UPDATE ANOMALY: a single real-world change must be applied to
+  many rows, and forgetting even one row corrupts the data.
